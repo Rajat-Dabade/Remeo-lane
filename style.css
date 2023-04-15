@@ -1,0 +1,614 @@
+/*-----------Body----------*/
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    background-color: #EBF2F9;
+}
+
+/*-----------Navbar----------*/
+
+nav {
+    background-color: #1E2B54;
+    opacity: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 8px;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+   
+    box-sizing: border-box;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    color: #ffffff;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .selected {
+    color: #E47F2D;
+    border-bottom: 2px solid #E47F2D;
+    font-weight: bold;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 16px 16px; 
+  }
+
+  .button-border {
+    border: 2px solid #E47F2D;
+    color: #E47F2D;
+    padding: 16px, 16px;
+    font-weight: bold;
+  }
+
+
+
+/*-----------Navbar Interactions----------*/
+
+  nav a:hover {
+    border-bottom: 2px solid #E47F2D;
+  }
+
+  nav a:active {
+    color: #E47F2D;
+  }
+
+  .button-border:hover {
+    background-color: #E47F2D;
+    color: #ffffff;
+  }
+
+
+/*-----------Hero----------*/
+
+.hero {
+    background-image: url('Assets/Hero\ img.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* adjust height as needed */
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero-text {
+    position: absolute;
+    text-align: Left;
+    width: 30rem;
+    padding: 80px 152px;
+  }
+  
+  .hero-text h1 {
+    color: white;
+    font-size: 7rem;
+    margin-bottom: 1rem;
+    font-family: 'Bodoni', serif;
+    font-weight: normal;
+  }
+  
+  .hero-text p {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  /*-----------Search Secion----------*/
+
+ 
+
+  .search-section {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 744px;
+    height: 48px;
+    gap: 48px;
+    padding: 32px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    margin: -68px auto 0;
+    z-index: 2;
+  }
+
+  .icon-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    height: 32px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #ffffff;
+    background-color: #E47F2D;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+  }
+
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    gap: 24px;
+    margin-top: 16px;
+  }
+
+  .input-group label {
+    font-weight: bold;
+    color: #1E2B54;
+  }
+
+  input {
+  font-size: 1rem;
+    border: none;
+  outline: none;
+  background: transparent;
+  color: #1E2B54;
+  opacity: 50%;
+  }
+
+  #guests {
+    width: 72px;
+  }
+  
+
+  /* -----About Us section----- */
+
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -5rem;
+  }
+  
+  .content {
+    flex-basis: 40%;
+  
+    margin-left: 152px;
+  }
+  
+  .image {
+    flex-basis: 60%;
+    margin-right: 40px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h2 {
+    color: #1E2B54;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    font-family: 'Bodoni', serif;
+    font-weight: normal;
+  }
+
+  h4 {
+    margin-bottom: -3rem;
+    font-weight: normal;
+    color: #1E2B54;
+    opacity: 50%;
+    letter-spacing: 2px;
+  }
+
+  section p {
+    line-height: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  /* --------Categories Section-------- */
+
+  .room-types {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 152px;
+  }
+
+ 
+
+  .room-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem;
+    text-align: left;
+  }
+
+  .room-grid-item img {
+    max-width: 100%;
+  }
+
+  .room-grid-item-tall {
+    margin-top: 20rem;
+  }
+
+  .room-grid-item-short {
+    margin-top: -20rem;
+  }
+
+
+    /* --------Amenities Section-------- */
+
+.amenities {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+  .amenities__content {
+    background-color: #1E2B54;
+    padding-left: 152px;
+    padding-right: 120px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    flex-basis: 45%;
+    margin-right: 64PX;
+  }
+  .amenities__title, .amenities__text {
+    color: #ffffff;
+  }
+
+  .amenities__subtitle {
+    color: #EBF2F9;
+    opacity: 50%;
+  }
+
+  .amenities__text {
+    line-height: 2rem;
+  }
+
+  .icon-container img {
+    height: 40px;
+    width: 40px;
+  }
+  .icon-container {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    align-items: center;
+    background: none;
+    gap: 24px;
+    border: 1px solid #E47F2D;
+    color: #1E2B54;
+    padding: 16px 16px;
+    width: 160px;
+  }
+
+  .amenities__icons {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-right: 152px;
+  }
+
+    /* --------Reviews-------- */
+
+
+  .review {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 24px;
+    margin-top: 200px;
+  }
+  
+ .review .heading {
+    text-align: center;
+    margin-bottom: 56px;
+ } 
+  
+ .user-reviews {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ }
+  .user-reviews-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 56px;
+  }
+  
+  .user-review-card {
+    width: calc(33.33% - 16px);
+    margin-bottom: 16px;
+    background-color: #ffffff;
+    display: flex;
+  }
+  
+  .user-review-card svg {
+    margin-top: 24px;
+    margin-left: 24px;
+    width: 40px;
+    height: 40px;
+    flex-basis: 100px;
+  }
+  .user-review-card-content {
+    padding: 24px 24px 0px 24px;
+    margin-bottom: -16px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .user-review {
+    font-size: 1rem;
+    color: #1E2B54;
+    margin-bottom: 16px;
+  }
+  
+  .user-location {
+    font-size: .75rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  .pattern {
+    margin-top: -64px;
+    z-index: -1;
+    transform: scale(0.80);
+  }
+
+      /* --------Achievements-------- */
+
+.achievements {
+    padding: 80px 152px 200px;
+    background-image: url(Assets/Achievements.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+
+.achievements .heading {
+    margin-top: 0px;
+}
+.box-content p {
+    margin-bottom: 0px;
+    color: #EBF2F9;
+}
+
+.box-content h3 {
+    margin-top: 0px;
+    font-size: 2rem;
+    color: #E47F2D;
+}
+
+.box-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 5rem;
+    column-gap: 10rem;
+    background-color: #1E2B54;
+    padding: 56px;
+}
+
+
+/* ---------Contact Us--------- */
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    margin-top: 152px;
+    margin-bottom: 200px;
+    padding: 0px 152px;
+    
+}
+
+.contact-us .heading {
+    text-align: center;
+}
+.form {
+    display: flex;
+    gap: 56px;
+    background-color: #1E2B54;
+    padding: 48px;
+    justify-content: center;
+  }
+
+  .form div { 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #EBF2F9;
+  }
+  
+  .form input,
+  .form select,
+  .form textarea {
+     padding: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #EBF2F9
+  }
+
+  #name, #email, #mobile, #accomodation-type, #no-of-persons, #query, #submit {
+    margin: 0px 0px 16px 0px;
+    width: 500px;
+  }
+
+  #query {
+    height: 120px;
+  }
+
+  #submit {
+    width: 475px;
+    text-align: center;
+    height: 44px;
+  }
+
+  #accomodation-type {
+    width: 520px;
+    height: 44px;
+  }
+
+  /* -------------Book Now------------- */
+
+  .book-now {
+    display: flex;
+    background-image: url(Assets/bookk.png);
+    flex-direction: column;
+    padding: 80px 152px 200px;
+    align-items: start;
+    text-align: left;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+  }
+  
+  
+  .book-content {
+      width: 60%;
+    }
+    
+    .book-now h2 {
+        color: #EBF2F9;
+    font-size: 6rem;
+}
+        
+.book-now p {
+    font-size: 1.5rem;
+    color: #EBF2F9;
+    line-height: 1.5rem;
+    width: 70%;
+        }
+
+
+/* -------footer------- */
+
+.footer {
+    background-color: #1E2B54;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.copyright {
+    height: 56px;
+    background-color: #EBF2F9;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    padding: 80px 152px 20px;
+    gap: 10px;
+    
+}
+
+.logo-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.logo img {
+    transform: scale(.75);
+}
+
+.details p {
+    color: #EBF2F9;
+    margin: 0px;
+    margin-left: 16px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+}
+.row {
+    display: flex;
+    
+}
+
+
+.map-container {
+    margin-bottom: 40px ;
+    margin-top: 40px;
+
+  }
+
+
+
+
+
+
+/* icons */
+
+.fa-stack {
+    display: inline-block;
+    position: relative;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    vertical-align: middle;
+  }
+  
+  .fa-stack-2x {
+    font-size: 2em;
+  }
+  
+  .fa-stack-1x {
+    font-size: 1em;
+  }
+  
+  .fa-inverse {
+    color: #fff;
+  }
+
+@media (max-width: 1086px) {
+    .amenities__content {
+        margin-right: 0px;
+      }
+    .amenities {
+        flex-direction: column;
+      }
+  }
+
+@media {max-width: 1283px){
+
+    .form div {
+
+      }
+  }
