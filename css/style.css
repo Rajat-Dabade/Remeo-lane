@@ -1,6 +1,5 @@
 body {
   background: #fff;
-  font-family: "Roboto", arial, sans-serif;
   font-weight: 200;
   font-size: 16px;
   line-height: 1.8;
@@ -25,13 +24,13 @@ a {
 
 h1, h2, h3, h4, h5 {
   color: #000;
-  font-family: "Playfair Display", times, serif; }
+}
 
 .font-family-serif {
-  font-family: "Playfair Display", times, serif; }
+}
 
 .font-family-sans-serif {
-  font-family: "Roboto", arial, sans-serif; }
+}
 
 .bg-light {
   background: #f2f4fb !important; }
@@ -124,7 +123,7 @@ textarea.form-control {
     color: #fff;
     font-weight: bold;
     line-height: 1;
-    font-family: "Playfair Display", times, serif; }
+  }
     @media (max-width: 991.98px) {
       .site-logo a {
         font-size: 27px; } }
@@ -144,7 +143,7 @@ textarea.form-control {
 .site-navbar nav {
   text-align: left; }
 .site-navbar nav .menu {
-  font-family: "Playfair Display", times, serif; }
+}
 .site-navbar nav .menu li a {
   color: #000;
   font-size: 40px;
@@ -161,7 +160,6 @@ textarea.form-control {
 .site-navbar .extra-info ul li a {
   color: #000; }
 .site-navbar .extra-info h3 {
-  font-family: "Roboto", arial, sans-serif;
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: .2em;
@@ -181,7 +179,6 @@ textarea.form-control {
   width: 100%;
   position: relative; }
   .site-hero .heading {
-    font-family: "Playfair Display", times, serif;
     font-weight: bold; }
   .site-hero .scroll-down {
     position: absolute;
@@ -212,8 +209,8 @@ textarea.form-control {
   height: 100vh;
   min-height: 700px; }
 .site-hero-inner .heading {
+  font-family: 'Bodoni', serif;
   font-size: 80px;
-  font-family: "Playfair Display", times, serif;
   color: #fff;
   line-height: 1;
   font-weight: bold; }
@@ -318,7 +315,6 @@ textarea.form-control {
 .visit-section .heading {
   font-size: 15px;
   text-transform: uppercase;
-  font-family: "Roboto", arial, sans-serif;
   color: #b3b3b3;
   letter-spacing: .2em;
   margin-bottom: 30px; }
@@ -347,7 +343,6 @@ textarea.form-control {
 
 .heading-serif, .heading, .testimonial-section .heading, .slider-section .heading, .blog-post-entry .heading {
   font-size: 60px;
-  font-family: "Playfair Display", times, serif;
   font-weight: 700; }
 @media (max-width: 991.98px) {
   .heading-serif, .heading, .testimonial-section .heading, .slider-section .heading, .blog-post-entry .heading {
@@ -685,7 +680,7 @@ textarea.form-control {
 .side-box .heading, .sidebar-search .heading {
   font-size: 18px;
   margin-bottom: 30px;
-  font-family: "Roboto", arial, sans-serif; }
+}
 
 .post-list li {
   margin-bottom: 20px; }
@@ -721,14 +716,12 @@ textarea.form-control {
   border-color: #343a40; }
 
 .contact-section .contact-info p {
-  font-family: "Playfair Display", times, serif;
   font-size: 30px;
   margin-bottom: 30px; }
 .contact-section .contact-info p .d-block {
   font-size: 14px;
   letter-spacing: .2em;
   font-weight: bold;
-  font-family: "Roboto", arial, sans-serif;
   text-transform: uppercase; }
 
 .post-categories li {
@@ -1075,7 +1068,7 @@ textarea.form-control {
   color: #000 !important; }
 
 .check-availabilty {
-  margin-top: -170px;
+  margin-top: -107px;
   position: relative; }
 .check-availabilty .block-32 {
   background: #fff;
@@ -1292,6 +1285,10 @@ textarea.form-control {
 
   .mobile-menu {
     display: none;
+  }
+
+  .details {
+    line-height: 35px;
   }
 
 @media (max-width: 1369px) {
