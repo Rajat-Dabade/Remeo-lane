@@ -617,6 +617,7 @@ textarea.form-control {
 }
 .footer-section {
   background: #1E2B54;
+  font-size: 20px;
   color: #fff; }
 .footer-section a {
   color: rgba(255, 255, 255, 0.7); }
@@ -1290,6 +1291,17 @@ textarea.form-control {
   .details {
     line-height: 35px;
   }
+
+.p-font {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 400;
+}
+
+.icon-font {
+  font-size: 30px;
+  margin-left: 10px;
+}
 
 @media (max-width: 1369px) {
   .welcome-img {
