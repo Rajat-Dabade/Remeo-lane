@@ -1305,6 +1305,10 @@ textarea.form-control {
   margin-left: 10px;
 }
 
+.width-fix {
+  width: fit-content;
+}
+
 @media (max-width: 1369px) {
   .welcome-img {
     max-width: 80%;
