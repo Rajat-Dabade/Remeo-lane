@@ -618,7 +618,9 @@ textarea.form-control {
 .footer-section {
   background: #1E2B54;
   font-size: 20px;
-  color: #fff; }
+  color: #fff;
+  margin-top: 40px;
+}
 .footer-section a {
   color: rgba(255, 255, 255, 0.7); }
 .footer-section a:hover {
