@@ -1346,12 +1346,11 @@ textarea.form-control {
     background-color: #1E2B54;
   }
 
-  .contact-info {
+  .contact-details {
     margin-top: 100px;
     margin-bottom: 50px;
     margin-left: 24px !important;
   }
-
   .arrow-svg {
     display: none;
   }
