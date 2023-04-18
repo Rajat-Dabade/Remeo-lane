@@ -570,6 +570,9 @@ nav {
 
   }
 
+.map-container iframe {
+    width: -webkit-fill-available;
+  }
 
 
 

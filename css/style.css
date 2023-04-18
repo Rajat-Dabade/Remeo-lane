@@ -1309,6 +1309,10 @@ textarea.form-control {
   width: fit-content;
 }
 
+.footer-container {
+  margin: 0 100px;
+}
+
 @media (max-width: 1369px) {
   .welcome-img {
     max-width: 80%;
@@ -1366,6 +1370,9 @@ textarea.form-control {
   }
   .contact-info {
     margin-top: 0px;
+  }
+  .footer-container {
+    margin: 0 30px;
   }
 
 }
