@@ -1,423 +1,345 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
-    <link href="https://fonts.googleapis.com/css?family=Bodoni&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <title>Romeo Lane</title>
-</head>
-<body>
+    <title>Sogo Hotel by Colorlib.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=|Roboto+Sans:400,700|Playfair+Display:400,700">
 
-    <!------Navbar------>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/fancybox.min.css">
+    
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
 
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    
     <nav class="navbar">
-        <img src="Assets/Logo white md.png" alt="Website Logo">
-        <ul class="destop-menu">
-            <li><a class="selected" href="#">Home</a></li>
-            <li><a href="pages/about.html">About Us</a></li>
-            <li><a href="pages/accomodation.html">Accomodation</a></li>
-            <li><a href="#">Reservations</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a class="button-border" href="pages/contact.html">Contact Us</a></li>
-        </ul>
-        <span class="fa fa-bars text-primary handburger-menu" id="handburger-menu-btn"></span>
-        <ul id="handBurgerMenu" class="mobile-menu">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="pages/about.html">About Us</a></li>
-          <li><a href="pages/accomodation.html">Accomodation</a></li>
-          <li><a href="#">Reservations</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a class="button-border" href="pages/contact.html">Contact Us</a></li>
-        </ul>
+      <img src="Assets/Logo white md.png" alt="Website Logo">
+      <ul class="destop-menu">
+        <li><a class="selected" href="#">Home</a></li>
+        <li><a href="pages/about.html">About Us</a></li>
+        <li><a href="pages/accomodation.html">Accomodation</a></li>
+        <li><a href="pages/reservation.html">Reservations</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a class="button-border" href="pages/contact.html">Contact Us</a></li>
+      </ul>
+      <span class="fa fa-bars text-primary handburger-menu" id="handburger-menu-btn"></span>
+      <ul id="handBurgerMenu" class="mobile-menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="pages/about.html">About Us</a></li>
+        <li><a href="pages/accomodation.html">Accomodation</a></li>
+        <li><a href="pages/reservation.html">Reservations</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a class="button-border" href="pages/contact.html">Contact Us</a></li>
+      </ul>
     </nav>
 
-    <!------Hero------>
-    <section class="hero">
-        <div class="hero-text">
-          <h1>Paradise Calling</h1>
-          <p>A magical oasis in the middle of the city, encompassing hallmarks of luxury.</p>
-        </div>
-      </section>
-
-    <!--Search hotel section-->
-        <form class="search-section">
-            <div class="input-group">
-                <label for="location">Location</label>
-                <input type="text" id="location" name="location" placeholder="Enter your location">    
-            </div>
-
-            <div class="input-group">
-                <label for="date">Date</label>
-                <input type="text" id="date" name="Date" placeholder="Check In - Checkout">
-                <!-- <input type="date" id="date" name="date" placeholder="Enter your location">  -->
-            </div>
-
-            <div class="input-group">
-                <label for="guests">Adults</label>
-                <input type="text" id="guests" name="guests" placeholder="2 Adults">
-                <!-- <input type="number" id="guests" name="guests" min="1" max="10" placeholder="2 Adults">    -->
-            </div>
-            <div class="input-group">
-              <label for="guests">Children</label>
-              <input type="text" id="guests" name="guests" placeholder="2 Children">
-              <!-- <input type="number" id="guests" name="guests" min="1" max="10" placeholder="2 Adults">    -->
-            </div>
-
-            <div class="icon-button">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.7505 20.6895L16.0865 15.0255C17.4475 13.3915 18.1263 11.2956 17.9815 9.17392C17.8366 7.05222 16.8794 5.06804 15.3089 3.63413C13.7384 2.20023 11.6755 1.427 9.54942 1.47531C7.42333 1.52362 5.39772 2.38974 3.89396 3.8935C2.3902 5.39726 1.52408 7.42288 1.47577 9.54896C1.42746 11.6751 2.20068 13.7379 3.63459 15.3084C5.0685 16.8789 7.05268 17.8362 9.17438 17.981C11.2961 18.1258 13.3919 17.4471 15.026 16.086L20.69 21.75L21.7505 20.6895ZM3.00045 9.74999C3.00045 8.41497 3.39633 7.10993 4.13803 5.9999C4.87973 4.88986 5.93394 4.0247 7.16734 3.51381C8.40074 3.00292 9.75794 2.86924 11.0673 3.12969C12.3767 3.39014 13.5794 4.03302 14.5234 4.97702C15.4674 5.92103 16.1103 7.12376 16.3708 8.43314C16.6312 9.74251 16.4975 11.0997 15.9866 12.3331C15.4757 13.5665 14.6106 14.6207 13.5006 15.3624C12.3905 16.1041 11.0855 16.5 9.75045 16.5C7.96085 16.498 6.24512 15.7862 4.97967 14.5208C3.71423 13.2553 3.00244 11.5396 3.00045 9.74999Z" fill="white" stroke="white"/>
-                    </svg>
-                <a class="button-filled" type="submit">Search</a>
-            </div>
-        </form>
-    
-    <!-- About Us section -->
-
-    <section class="About">
-        <div class="content">
-          <h4>- ABOUT US -</h4>
-          <h2>Discover Our Story</h2>
-          <p>Romeo lane one of the finest resorts in goa, offers bespoke luxury. 
-            The resort houses Deluxe and super deluxe cottages 
-            with standard rooms, premium private pool and pool side bar restaurant lounge.<br><br>
-            
-            Featuring subtle and sophisticated décor these rooms in Goa exude a sense of 
-            belongingness. State-of-the-art amenities in these rooms will make your stay comfortable.</p>
-          <div class="icon-button">
-            <a class="button-filled" type="submit">Read More</a>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.2727 20.5341L10.517 18.7955L15.7756 13.5369H3V10.9972H15.7756L10.517 5.74716L12.2727 4L20.5398 12.267L12.2727 20.5341Z" fill="white"/>
-                </svg>                
+    <section class="site-hero overlay" style="background-image: url(images/aboutHero.jpg)" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row site-hero-inner justify-content-center align-items-center">
+          <div class="col-md-10 text-center" data-aos="fade-up">
+            <span class="custom-caption text-uppercase text-white d-block  mb-3">A magical oasis in the middle of the city, encompassing hallmarks of luxury.</span>
+            <h1 class="heading">Paradise Calling</h1>
           </div>
         </div>
-        <div class="image">
-          <img src="Assets/About us img.png" alt="Image">
-        </div>
-        
-      </section>
+      </div>
+    </section>
+    <!-- END section -->
 
-    <!-- Categories Section -->
+    <section class="section bg-light pb-0"  >
+      <div class="container">
+       
+        <div class="row check-availabilty" id="next">
+          <div class="block-32" data-aos="fade-up" data-aos-offset="-200">
 
-    <section class="room-types">
-        <div class="heading">
-          <h4>- CATEGORIES -</h4>
-          <h2 class="section-heading">Elevate Your Stay</h2>
-        </div>
-
-        <div class="room-grid">
-          <div class="room-grid-item">
-            <img src="Assets/Standard King.png" alt="Room 1">
-            <h3>Standard King</h3>
-          <p>With room sizes ranging from 210-230 sq. ft these rooms are spacious and quintessential 
-            for modern travellers. These rooms offer amenities like a double bed, smart TV’s, High speed Wi-Fi.</p>
-          </div>
-          <div class="room-grid-item-tall">
-            <img src="Assets/Standard Queen.png" alt="Room 2">
-            <h3>Standard King</h3>
-            <p>With room sizes ranging from 210-230 sq. ft these rooms are spacious and quintessential 
-              for modern travellers. These rooms offer amenities like a double bed, smart TV’s, High speed Wi-Fi.</p>
-          </div>
-          <div class="room-grid-item-short">
-            <img src="Assets/Delux Cottage.png" alt="Room 3">
-            <h3>Standard King</h3>
-            <p>With room sizes ranging from 210-230 sq. ft these rooms are spacious and quintessential 
-              for modern travellers. These rooms offer amenities like a double bed, smart TV’s, High speed Wi-Fi.</p>
-          </div>
-          <div class="room-grid-item">
-            <img src="Assets/Super Delux.png" alt="Room 4">
-            <h3>Standard King</h3>
-            <p>With room sizes ranging from 210-230 sq. ft these rooms are spacious and quintessential 
-              for modern travellers. These rooms offer amenities like a double bed, smart TV’s, High speed Wi-Fi.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Amenities -->
-      
-      <section class="amenities">
-        <div class="amenities__content">
-          <h4 class="amenities__subtitle">- AMENITIES -</h4>
-          <h2 class="amenities__title">Additional Comfort</h2>
-          <p class="amenities__text">we offer a range of exceptional amenities that cater to all your 
-            needs and ensure that your stay with us is not only comfortable but unforgettable. We understand 
-            the importance of providing guests with the best experience.</p>
-        </div>
-        
-        <div class="amenities__icons">
-            <div class="icon-container">
-                <img src="Assets/Icons/Mask group.png" alt="spa">
-                <a class="icon-text">Spa</a>
-            </div>
-
-            <div class="icon-container">
-                <img src="Assets/Icons/Mask group-1.png" alt="Luxary Dining">
-                <a class="icon-text">Luxary Dining</a>
-            </div>
-
-            <div class="icon-container">
-                <img src="Assets/Icons/Mask group-2.png" alt="Gym">
-                <a class="icon-text">Gym</a>
-            </div>
-
-            <div class="icon-container">
-                <img src="Assets/Icons/Mask group-3.png" alt="Pool">
-                <a class="icon-text">Pool</a>
-            </div>
-
-            <div class="icon-container">
-                <img src="Assets/Icons/Mask group-4.png" alt="Meeting Rooms">
-                <a class="icon-text">Meeting Rooms</a>
-            </div>
-
-            <div class="icon-container">
-                <img src="Assets/Icons/Mask group-5.png" alt="Valet">
-                <a class="icon-text">Valet</a>
-            </div>
-
-            <div class="icon-container">
-                <img src="Assets/Icons/Mask group-6.png" alt="Mini Bar">
-                <a class="icon-text">Mini Bar</a>
-            </div>
-
-            <div class="icon-container">
-                <img src="Assets/Icons/Mask group-7.png" alt="Breakfast">
-                <a class="icon-text">Breakfast</a>
-            </div>
-
-            <div class="icon-container">
-                <img src="Assets/Icons/Mask group-8.png" alt="Concierge">
-                <a class="icon-text">Concierge</a>
-            </div>
-      </section>
-
-        <!-- Categories Section -->
-
-        <section class="review">
-            <div class="heading">
-              <h4>- REVIEWS -</h4>
-              <h2 class="section-heading">Guest Stories</h2>
-            </div>
-    
-            <div class="user-reviews">
-
-                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M72 38.5C72.8284 38.5 73.5 39.1716 73.5 40C73.5 40.8284 72.8284 41.5 72 41.5V38.5ZM6.93934 41.0607C6.35355 40.4749 6.35355 39.5251 6.93934 38.9393L16.4853 29.3934C17.0711 28.8076 18.0208 28.8076 18.6066 29.3934C19.1924 29.9792 19.1924 30.9289 18.6066 31.5147L10.1213 40L18.6066 48.4853C19.1924 49.0711 19.1924 50.0208 18.6066 50.6066C18.0208 51.1924 17.0711 51.1924 16.4853 50.6066L6.93934 41.0607ZM72 41.5H8V38.5H72V41.5Z" fill="#E47F2D"/>
-                </svg>
-                
-                <div class="user-reviews-card-container">
-
-                    <div class="user-review-card">
-
-                        <svg width="38" height="27" viewBox="0 0 38 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M33.7734 2.63281C31.0911 4.61198 29.0599 6.60417 27.6797 8.60938C26.2995 10.6146 25.6094 12.5677 25.6094 14.4688C25.6094 15.7448 25.7005 16.6562 25.8828 17.2031C26.0911 17.724 26.4297 17.9844 26.8984 17.9844C26.8984 17.9844 27.3932 17.3464 28.3828 16.0703C29.3984 14.7943 30.6615 14.1562 32.1719 14.1562C33.8646 14.1562 35.1797 14.6641 36.1172 15.6797C37.0547 16.6693 37.5234 18.0885 37.5234 19.9375C37.5234 21.9948 36.8724 23.6875 35.5703 25.0156C34.2943 26.3177 32.6276 26.9688 30.5703 26.9688C27.9922 26.9688 25.8568 26.0443 24.1641 24.1953C22.4974 22.3203 21.6641 19.9375 21.6641 17.0469C21.6641 14.026 22.5495 11.1875 24.3203 8.53125C26.1172 5.875 28.8125 3.34896 32.4062 0.953125L33.7734 2.63281ZM12.9531 2.63281C10.2708 4.61198 8.23958 6.60417 6.85938 8.60938C5.47917 10.6146 4.78906 12.5677 4.78906 14.4688C4.78906 15.7969 4.88021 16.7214 5.0625 17.2422C5.24479 17.737 5.55729 17.9844 6 17.9844C6.02604 17.9844 6.54688 17.3464 7.5625 16.0703C8.60417 14.7943 9.86719 14.1562 11.3516 14.1562C13.0443 14.1562 14.3594 14.6641 15.2969 15.6797C16.2344 16.6693 16.7031 18.0885 16.7031 19.9375C16.7031 21.9948 16.0521 23.6875 14.75 25.0156C13.474 26.3177 11.8073 26.9688 9.75 26.9688C7.17188 26.9688 5.04948 26.0443 3.38281 24.1953C1.71615 22.3203 0.882812 19.9375 0.882812 17.0469C0.882812 14.026 1.76823 11.1875 3.53906 8.53125C5.3099 5.875 7.99219 3.34896 11.5859 0.953125L12.9531 2.63281Z" fill="#1E2B54"/>
-                        </svg>
-                      <div class="user-review-card-content">
-                        <p class="user-review">I had an amazing business trip at this hotel. 
-                            The room was perfect for working and had all the necessary amenities. </p>
-                        <p class="user-location">Rahul Agnihotri, Delhi</p>
-                      </div>
-                    </div>
-                    <div class="user-review-card">
-                        
-                        <svg width="38" height="27" viewBox="0 0 38 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M33.7734 2.63281C31.0911 4.61198 29.0599 6.60417 27.6797 8.60938C26.2995 10.6146 25.6094 12.5677 25.6094 14.4688C25.6094 15.7448 25.7005 16.6562 25.8828 17.2031C26.0911 17.724 26.4297 17.9844 26.8984 17.9844C26.8984 17.9844 27.3932 17.3464 28.3828 16.0703C29.3984 14.7943 30.6615 14.1562 32.1719 14.1562C33.8646 14.1562 35.1797 14.6641 36.1172 15.6797C37.0547 16.6693 37.5234 18.0885 37.5234 19.9375C37.5234 21.9948 36.8724 23.6875 35.5703 25.0156C34.2943 26.3177 32.6276 26.9688 30.5703 26.9688C27.9922 26.9688 25.8568 26.0443 24.1641 24.1953C22.4974 22.3203 21.6641 19.9375 21.6641 17.0469C21.6641 14.026 22.5495 11.1875 24.3203 8.53125C26.1172 5.875 28.8125 3.34896 32.4062 0.953125L33.7734 2.63281ZM12.9531 2.63281C10.2708 4.61198 8.23958 6.60417 6.85938 8.60938C5.47917 10.6146 4.78906 12.5677 4.78906 14.4688C4.78906 15.7969 4.88021 16.7214 5.0625 17.2422C5.24479 17.737 5.55729 17.9844 6 17.9844C6.02604 17.9844 6.54688 17.3464 7.5625 16.0703C8.60417 14.7943 9.86719 14.1562 11.3516 14.1562C13.0443 14.1562 14.3594 14.6641 15.2969 15.6797C16.2344 16.6693 16.7031 18.0885 16.7031 19.9375C16.7031 21.9948 16.0521 23.6875 14.75 25.0156C13.474 26.3177 11.8073 26.9688 9.75 26.9688C7.17188 26.9688 5.04948 26.0443 3.38281 24.1953C1.71615 22.3203 0.882812 19.9375 0.882812 17.0469C0.882812 14.026 1.76823 11.1875 3.53906 8.53125C5.3099 5.875 7.99219 3.34896 11.5859 0.953125L12.9531 2.63281Z" fill="#1E2B54"/>
-                        </svg>
-                            
-                      <div class="user-review-card-content">
-                        <p class="user-review">This hotel is the perfect escape from the busy city. 
-                            The amenities are top-notch and the staff was incredibly friendly and helpful.</p>
-                        <p class="user-location">Ajay Oberoi, Mumbai</p>
-                      </div>
-                    </div>
-                    <div class="user-review-card">
-
-                        <svg width="38" height="27" viewBox="0 0 38 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M33.7734 2.63281C31.0911 4.61198 29.0599 6.60417 27.6797 8.60938C26.2995 10.6146 25.6094 12.5677 25.6094 14.4688C25.6094 15.7448 25.7005 16.6562 25.8828 17.2031C26.0911 17.724 26.4297 17.9844 26.8984 17.9844C26.8984 17.9844 27.3932 17.3464 28.3828 16.0703C29.3984 14.7943 30.6615 14.1562 32.1719 14.1562C33.8646 14.1562 35.1797 14.6641 36.1172 15.6797C37.0547 16.6693 37.5234 18.0885 37.5234 19.9375C37.5234 21.9948 36.8724 23.6875 35.5703 25.0156C34.2943 26.3177 32.6276 26.9688 30.5703 26.9688C27.9922 26.9688 25.8568 26.0443 24.1641 24.1953C22.4974 22.3203 21.6641 19.9375 21.6641 17.0469C21.6641 14.026 22.5495 11.1875 24.3203 8.53125C26.1172 5.875 28.8125 3.34896 32.4062 0.953125L33.7734 2.63281ZM12.9531 2.63281C10.2708 4.61198 8.23958 6.60417 6.85938 8.60938C5.47917 10.6146 4.78906 12.5677 4.78906 14.4688C4.78906 15.7969 4.88021 16.7214 5.0625 17.2422C5.24479 17.737 5.55729 17.9844 6 17.9844C6.02604 17.9844 6.54688 17.3464 7.5625 16.0703C8.60417 14.7943 9.86719 14.1562 11.3516 14.1562C13.0443 14.1562 14.3594 14.6641 15.2969 15.6797C16.2344 16.6693 16.7031 18.0885 16.7031 19.9375C16.7031 21.9948 16.0521 23.6875 14.75 25.0156C13.474 26.3177 11.8073 26.9688 9.75 26.9688C7.17188 26.9688 5.04948 26.0443 3.38281 24.1953C1.71615 22.3203 0.882812 19.9375 0.882812 17.0469C0.882812 14.026 1.76823 11.1875 3.53906 8.53125C5.3099 5.875 7.99219 3.34896 11.5859 0.953125L12.9531 2.63281Z" fill="#1E2B54"/>
-                        </svg>
-
-                      <div class="user-review-card-content">
-                        <p class="user-review">We had a fantastic family vacation at this hotel! The children's 
-                            activities kept our kids entertained for hours, while the fitness center and pool were perfect for us adults.</p>
-                        <p class="user-location">Shan malhotra, Kolkata</p>
-                      </div>
-                    </div>
+            <form action="#">
+              <div class="row">
+                <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
+                  <label for="checkin_date" class="font-weight-bold text-black">Check In</label>
+                  <div class="field-icon-wrap">
+                    <div class="icon"><span class="icon-calendar"></span></div>
+                    <input type="text" id="checkin_date" class="form-control">
+                  </div>
                 </div>
-                
-                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 38.5C7.17157 38.5 6.5 39.1716 6.5 40C6.5 40.8284 7.17157 41.5 8 41.5V38.5ZM73.0607 41.0607C73.6464 40.4749 73.6464 39.5251 73.0607 38.9393L63.5147 29.3934C62.9289 28.8076 61.9792 28.8076 61.3934 29.3934C60.8076 29.9792 60.8076 30.9289 61.3934 31.5147L69.8787 40L61.3934 48.4853C60.8076 49.0711 60.8076 50.0208 61.3934 50.6066C61.9792 51.1924 62.9289 51.1924 63.5147 50.6066L73.0607 41.0607ZM8 41.5H72V38.5H8V41.5Z" fill="#E47F2D"/>
-                </svg>
-                    
-              </div>
-
-              <img class="pattern" src="Assets/pattern.png" alt="pattern">
-          </section>
-
-            <!-- Achievements Section -->
-
-
-          <section class="achievements">
-            <div class="heading">
-                <h4>- ACHIEVEMENTS -</h4>
-                <h2 class="section-heading">Let Numbers Talk</h2>
-              </div>
-
-              <div class="box-container">
-                  <div class="box-content">
-                    <h3>500000+</h3>
-                    <p>Customers 
-                        Served</p>
+                <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
+                  <label for="checkout_date" class="font-weight-bold text-black">Check Out</label>
+                  <div class="field-icon-wrap">
+                    <div class="icon"><span class="icon-calendar"></span></div>
+                    <input type="text" id="checkout_date" class="form-control">
                   </div>
-    
-                  <div class="box-content">
-                    <h3>7+</h3>
-                    <p>Country<br>
-                        Cousins</p>
-                  </div>
-    
-                  <div class="box-content">
-                    <h3>50+</h3>
-                    <p>Staff <br>
-                        Members</p>
-                  </div>
-    
-                  <div class="box-content">
-                    <h3>100000+</h3>
-                    <p>Sq. Ft. Luxury <br>
-                        Accommodations</p>
-                  </div>
-    
-                  <div class="box-content">
-                    <h3>4+</h3>
-                    <p>Years of <br>
-                        Experience</p>
-                  </div>
-    
-                  <div class="box-content">
-                    <h3>10+</h3>
-                    <p>Awards <br>
-                        Received</p>
-                  </div>
-              </div>
-          </section>
-  <!-- Contact Section -->
-          <section class="contact-us">
-            <div class="heading">
-                <h4>- GET IN TOUCH -</h4>
-                <h2 class="section-heading">Reach Us Out</h2>
-              </div>
-
-            
-                <form class="form">
-                    <div>
-                      <label for="name">Name</label>
-                      <input type="text" name="name">
-                      
-                      <label for="email">Email</label>
-                      <input type="email" name="email">
-                      
-                      <label for="mobile">Mobile Number</label>
-                      <input type="tel" name="mobile">
-
-                      <label for="accomodation-type">Accomodation Type</label>
-                      <select id="accomodation-type" name="accomodation-type">
-                        <option value="corporate">Corporate</option>
-                        <option value="individual">Individual</option>
-                        <option value="group">Group</option>
-                      </select>
-                    </div>
-                    
-                    <div>  
-                      <label for="no-of-persons">No of Persons</label>
-                      <input type="number" id="no-of-persons" name="no-of-persons">
-                      
-                      <label for="query">Write Your Query</label>
-                      <textarea id="query" name="query"></textarea>
-                      
-                      <div class="icon-button">
-                        <a class="button-filled" id="submit" type="submit">Submit</a>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.2727 20.5341L10.517 18.7955L15.7756 13.5369H3V10.9972H15.7756L10.517 5.74716L12.2727 4L20.5398 12.267L12.2727 20.5341Z" fill="white"/>
-                            </svg>                
+                </div>
+                <div class="col-md-6 mb-3 mb-md-0 col-lg-3">
+                  <div class="row">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                      <label for="adults" class="font-weight-bold text-black">Adults</label>
+                      <div class="field-icon-wrap">
+                        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                        <select name="" id="adults" class="form-control">
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                          <option value="">4+</option>
+                        </select>
                       </div>
                     </div>
-                </form>
-          </section>
-
-    <!-- Book Now Banner -->
-
-    <section class="book-now">
-            <div class="book-content">
-                <h2 class="section-heading">Your Dream Gateway Awaits</h2>
-                <p>Book now and indulge in a luxurious stay  that exceeds your expectations!</p>
-            </div>
-
-            <div class="icon-button">
-                <a class="button-filled" type="submit">Book Now</a>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.2727 20.5341L10.517 18.7955L15.7756 13.5369H3V10.9972H15.7756L10.517 5.74716L12.2727 4L20.5398 12.267L12.2727 20.5341Z" fill="white"/>
-                    </svg>                
-              </div>
-          </section>
-
-
-          <!-- Footer -->
-
-          <section class="footer">
-
-            <div class="footer-content">
-
-                <div class="logo-info">
-                    <div class="logo">
-                        <img src="Assets/logo footer.png" alt="">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                      <label for="children" class="font-weight-bold text-black">Children</label>
+                      <div class="field-icon-wrap">
+                        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                        <select name="" id="children" class="form-control">
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                          <option value="">4+</option>
+                        </select>
+                      </div>
                     </div>
-
-                    <div class="details">
-                        <div class="row">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M16.0007 16.0003C16.734 16.0003 17.362 15.739 17.8847 15.2163C18.4064 14.6945 18.6673 14.067 18.6673 13.3337C18.6673 12.6003 18.4064 11.9723 17.8847 11.4497C17.362 10.9279 16.734 10.667 16.0007 10.667C15.2673 10.667 14.6398 10.9279 14.118 11.4497C13.5953 11.9723 13.334 12.6003 13.334 13.3337C13.334 14.067 13.5953 14.6945 14.118 15.2163C14.6398 15.739 15.2673 16.0003 16.0007 16.0003ZM16.0007 28.8337C15.8229 28.8337 15.6451 28.8003 15.4673 28.7337C15.2895 28.667 15.134 28.5781 15.0007 28.467C11.7562 25.6003 9.33398 22.9394 7.73398 20.4843C6.13398 18.0283 5.33398 15.7337 5.33398 13.6003C5.33398 10.267 6.40643 7.61144 8.55132 5.63366C10.6953 3.65588 13.1784 2.66699 16.0007 2.66699C18.8229 2.66699 21.306 3.65588 23.45 5.63366C25.5949 7.61144 26.6673 10.267 26.6673 13.6003C26.6673 15.7337 25.8673 18.0283 24.2673 20.4843C22.6673 22.9394 20.2451 25.6003 17.0007 28.467C16.8673 28.5781 16.7118 28.667 16.534 28.7337C16.3562 28.8003 16.1784 28.8337 16.0007 28.8337Z" fill="white"/>
-                                </svg>
-                                
-                                
-                              <p>13, Third floor, Sham Nath Marg, <br> Civil Lines, New Delhi, Delhi 110054</p>
-                            </div>
-                         <div class="row">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M26.666 5.33301H5.33268C3.86602 5.33301 2.67935 6.53301 2.67935 7.99967L2.66602 23.9997C2.66602 25.4663 3.86602 26.6663 5.33268 26.6663H26.666C28.1327 26.6663 29.3327 25.4663 29.3327 23.9997V7.99967C29.3327 6.53301 28.1327 5.33301 26.666 5.33301ZM26.1327 10.9997L16.706 16.893C16.2793 17.1597 15.7193 17.1597 15.2927 16.893L5.86602 10.9997C5.73232 10.9246 5.61524 10.8232 5.52187 10.7016C5.42849 10.58 5.36077 10.4407 5.32278 10.2922C5.2848 10.1436 5.27735 9.98892 5.30089 9.83742C5.32443 9.68591 5.37846 9.54076 5.45972 9.41074C5.54098 9.28073 5.64778 9.16855 5.77365 9.081C5.89952 8.99345 6.04184 8.93236 6.19201 8.90141C6.34218 8.87046 6.49706 8.8703 6.64729 8.90094C6.79752 8.93158 6.93997 8.99239 7.06602 9.07967L15.9993 14.6663L24.9327 9.07967C25.0587 8.99239 25.2012 8.93158 25.3514 8.90094C25.5016 8.8703 25.6565 8.87046 25.8067 8.90141C25.9569 8.93236 26.0992 8.99345 26.225 9.081C26.3509 9.16855 26.4577 9.28073 26.539 9.41074C26.6202 9.54076 26.6743 9.68591 26.6978 9.83742C26.7213 9.98892 26.7139 10.1436 26.6759 10.2922C26.6379 10.4407 26.5702 10.58 26.4768 10.7016C26.3835 10.8232 26.2664 10.9246 26.1327 10.9997Z" fill="white"/>
-                                </svg>
-                                
-                              <p>romeolane@gmail.com</p>
-                         </div>   
-
-                         <div class="row">
-                             
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8.82667 14.3867C10.7467 18.16 13.84 21.24 17.6133 23.1733L20.5467 20.24C20.9067 19.88 21.44 19.76 21.9067 19.92C23.4 20.4133 25.0133 20.68 26.6667 20.68C27.4 20.68 28 21.28 28 22.0133V26.6667C28 27.4 27.4 28 26.6667 28C14.1467 28 4 17.8533 4 5.33333C4 4.6 4.6 4 5.33333 4H10C10.7333 4 11.3333 4.6 11.3333 5.33333C11.3333 7 11.6 8.6 12.0933 10.0933C12.24 10.56 12.1333 11.08 11.76 11.4533L8.82667 14.3867Z" fill="white"/>
-                                </svg>
-                                
-                             <p>70651 11192</p>
-                         </div>
-                            
-                       
-                    </div>
-                </div>
-
-                <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.652924350241!2d-118.40762668477737!3d33.94313268063321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5cbb7dd6bf2b59f9!2sThe%20Huntington%20Library%2C%20Art%20Museum%2C%20and%20Botanical%20Gardens!5e0!3m2!1sen!2sus!4v1616195681748!5m2!1sen!2sus" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                   </div>
+                </div>
+                <div class="col-md-6 col-lg-3 align-self-end">
+                  <button class="btn btn-primary btn-block text-white">Check Availabilty</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light mt-6 mb-1">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-12 col-lg-6 ml-auto order-lg-2 position-relative mb-5" data-aos="fade-up">
+            <figure class="img-absolute">
+              <img src="images/food-1.jpg" alt="Image" class="img-fluid">
+            </figure>
+            <img src="images/aboutHeaderSectionImg.jpg" alt="Image" class="img-fluid rounded">
+          </div>
+          <div class="col-md-12 col-lg-6 order-lg-1" data-aos="fade-up">
+            <h2 class="heading">Discover Our Story</h2>
+            <p class="mb-4 p-font">Romeo lane one of the finest resorts in goa, offers bespoke luxury. The resort houses Deluxe and super deluxe cottages with standard rooms, premium private pool and pool side bar restaurant lounge.
+              <br>
+              Featuring subtle and sophisticated décor these rooms in Goa exude a sense of belongingness. State-of-the-art amenities in these rooms will make your stay comfortable.</p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section blog-post-entry bg-light">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-md-10">
+            <h2 class="heading" data-aos="fade-up">Elevate Your Stay</h2>
+            <p data-aos="fade-up" class="p-font">Romeo Lane, the boutique resort
+              in goa is a blissful getaway in goa. Postcard views, coupled with exceptional
+              services and luxurious facilities define this 5-star resort in Goa. Spread
+              across an expansive area we have Well-manicured lush green plants
+              enveloping the entire pool and restaurant side, Lavish layout buffet in our all-
+              day dining space, Local Goan exotic birds in and around the property</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="media media-custom d-block mb-4 h-100">
+              <a href="#" class="mb-4 d-block"><img src="images/accomodation-single-room.jpg" alt="Image placeholder" class="img-fluid img-height-width"></a>
+              <div class="media-body">
+                <h2 class="mt-0 mb-3"><a href="#">Standard Room</a></h2>
+                <p class="p-font">With room sizes ranging from 210-230 sq. ft these rooms are spacious and quintessential for modern travellers. These rooms offer amenities like a double bed, smart TV’s, High speed Wi-Fi.</p>
+                <p><a href="pages/reservation.html" class="btn btn-primary text-white">Reserve Now</a></p>
+              </div>
             </div>
 
-            <div class="copyright">
-                <p>Ⓒ 2023. ALL RIGHTS RESERVED.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="200">
+            <div class="media media-custom d-block mb-4 h-100">
+              <a href="#" class="mb-4 d-block"><img src="images/accomodation-cottage.jpg" alt="Image placeholder" class="img-fluid img-height-width"></a>
+              <div class="media-body">
+                <h2 class="mt-0 mb-3"><a href="#">Deluxe Cottage</a></h2>
+                <p class="p-font">With Room sizes ranging from 210-295 sq. ft these cottages offer amenities like double bed, smart TV’s, Mini bar, Handcrafted artefacts and room décor.</p>
+                <p><a href="pages/reservation.html" class="btn btn-primary text-white">Reserve Now</a></p>
+              </div>
             </div>
-          </section>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="300">
+            <div class="media media-custom d-block mb-4 h-100">
+              <a href="#" class="mb-4 d-block"><img src="images/accomodation-presidential-room.jpg" alt="Image placeholder" class="img-fluid img-height-width"></a>
+              <div class="media-body">
+                <h2 class="mt-0 mb-3"><a href="#">Super Deluxe</a></h2>
+                <p class="p-font">With Room sizes ranging from 450 sq. ft are designed in superior aesthetic appeal. Enjoy the well-manicured lush green plants surrounding the rooms, plush bespoke handcrafted furniture, minibar, in room aroma therapy.</p>
+                <p><a href="pages/reservation.html" class="btn btn-primary text-white">Reserve Now</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <script src="js/script.js"></script>
-</body>
+    <section class="review">
+      <div class="heading">
+        <h2 class="section-heading">People Says</h2>
+      </div>
+
+      <div class="user-reviews">
+
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-svg">
+          <path d="M72 38.5C72.8284 38.5 73.5 39.1716 73.5 40C73.5 40.8284 72.8284 41.5 72 41.5V38.5ZM6.93934 41.0607C6.35355 40.4749 6.35355 39.5251 6.93934 38.9393L16.4853 29.3934C17.0711 28.8076 18.0208 28.8076 18.6066 29.3934C19.1924 29.9792 19.1924 30.9289 18.6066 31.5147L10.1213 40L18.6066 48.4853C19.1924 49.0711 19.1924 50.0208 18.6066 50.6066C18.0208 51.1924 17.0711 51.1924 16.4853 50.6066L6.93934 41.0607ZM72 41.5H8V38.5H72V41.5Z" fill="#E47F2D"/>
+        </svg>
+
+        <div class="row width-fix">
+
+          <div class="col-lg-4 col-md-12">
+            <svg width="58" height="47" viewBox="0 0 38 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M33.7734 2.63281C31.0911 4.61198 29.0599 6.60417 27.6797 8.60938C26.2995 10.6146 25.6094 12.5677 25.6094 14.4688C25.6094 15.7448 25.7005 16.6562 25.8828 17.2031C26.0911 17.724 26.4297 17.9844 26.8984 17.9844C26.8984 17.9844 27.3932 17.3464 28.3828 16.0703C29.3984 14.7943 30.6615 14.1562 32.1719 14.1562C33.8646 14.1562 35.1797 14.6641 36.1172 15.6797C37.0547 16.6693 37.5234 18.0885 37.5234 19.9375C37.5234 21.9948 36.8724 23.6875 35.5703 25.0156C34.2943 26.3177 32.6276 26.9688 30.5703 26.9688C27.9922 26.9688 25.8568 26.0443 24.1641 24.1953C22.4974 22.3203 21.6641 19.9375 21.6641 17.0469C21.6641 14.026 22.5495 11.1875 24.3203 8.53125C26.1172 5.875 28.8125 3.34896 32.4062 0.953125L33.7734 2.63281ZM12.9531 2.63281C10.2708 4.61198 8.23958 6.60417 6.85938 8.60938C5.47917 10.6146 4.78906 12.5677 4.78906 14.4688C4.78906 15.7969 4.88021 16.7214 5.0625 17.2422C5.24479 17.737 5.55729 17.9844 6 17.9844C6.02604 17.9844 6.54688 17.3464 7.5625 16.0703C8.60417 14.7943 9.86719 14.1562 11.3516 14.1562C13.0443 14.1562 14.3594 14.6641 15.2969 15.6797C16.2344 16.6693 16.7031 18.0885 16.7031 19.9375C16.7031 21.9948 16.0521 23.6875 14.75 25.0156C13.474 26.3177 11.8073 26.9688 9.75 26.9688C7.17188 26.9688 5.04948 26.0443 3.38281 24.1953C1.71615 22.3203 0.882812 19.9375 0.882812 17.0469C0.882812 14.026 1.76823 11.1875 3.53906 8.53125C5.3099 5.875 7.99219 3.34896 11.5859 0.953125L12.9531 2.63281Z" fill="#1E2B54"/>
+            </svg>
+            <div class="user-review-card-content">
+              <p class="user-review p-font">This hotel is the perfect escape from the
+                busy city. The amenities are top-notch and the staff was incredibly
+                friendly and helpful. The room was comfortable and the on-site
+                restaurant was delicious. I would highly recommend this hotel to
+                anyone looking for a relaxing getaway. This hotel is the perfect
+                escape from the busy city. The amenities are top-notch and the staff
+                was incredibly friendly and helpfu The room was comfortable and the
+                on-site restaurant was delicious. I would highly recommend this hotel
+                to anyone looking for a relaxing getaway</p>
+              <p class="user-location">Rahul Agnihotri, Delhi</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <svg width="38" height="27" viewBox="0 0 38 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M33.7734 2.63281C31.0911 4.61198 29.0599 6.60417 27.6797 8.60938C26.2995 10.6146 25.6094 12.5677 25.6094 14.4688C25.6094 15.7448 25.7005 16.6562 25.8828 17.2031C26.0911 17.724 26.4297 17.9844 26.8984 17.9844C26.8984 17.9844 27.3932 17.3464 28.3828 16.0703C29.3984 14.7943 30.6615 14.1562 32.1719 14.1562C33.8646 14.1562 35.1797 14.6641 36.1172 15.6797C37.0547 16.6693 37.5234 18.0885 37.5234 19.9375C37.5234 21.9948 36.8724 23.6875 35.5703 25.0156C34.2943 26.3177 32.6276 26.9688 30.5703 26.9688C27.9922 26.9688 25.8568 26.0443 24.1641 24.1953C22.4974 22.3203 21.6641 19.9375 21.6641 17.0469C21.6641 14.026 22.5495 11.1875 24.3203 8.53125C26.1172 5.875 28.8125 3.34896 32.4062 0.953125L33.7734 2.63281ZM12.9531 2.63281C10.2708 4.61198 8.23958 6.60417 6.85938 8.60938C5.47917 10.6146 4.78906 12.5677 4.78906 14.4688C4.78906 15.7969 4.88021 16.7214 5.0625 17.2422C5.24479 17.737 5.55729 17.9844 6 17.9844C6.02604 17.9844 6.54688 17.3464 7.5625 16.0703C8.60417 14.7943 9.86719 14.1562 11.3516 14.1562C13.0443 14.1562 14.3594 14.6641 15.2969 15.6797C16.2344 16.6693 16.7031 18.0885 16.7031 19.9375C16.7031 21.9948 16.0521 23.6875 14.75 25.0156C13.474 26.3177 11.8073 26.9688 9.75 26.9688C7.17188 26.9688 5.04948 26.0443 3.38281 24.1953C1.71615 22.3203 0.882812 19.9375 0.882812 17.0469C0.882812 14.026 1.76823 11.1875 3.53906 8.53125C5.3099 5.875 7.99219 3.34896 11.5859 0.953125L12.9531 2.63281Z" fill="#1E2B54"/>
+            </svg>
+            <div class="user-review-card-content">
+              <p class="user-review p-font">OMG best place ever. So much ambience and calmness. The swimming pool
+                is great. And rooms are very luxurious. You get a smart Android TV. Staff is
+                great. 5-minute walk to Candolim Beach with an internal road straight to the
+                beach. I would stay here anytime!!</p>
+              <p class="user-location">Ajay Oberoi, Mumbai</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <svg width="38" height="27" viewBox="0 0 38 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M33.7734 2.63281C31.0911 4.61198 29.0599 6.60417 27.6797 8.60938C26.2995 10.6146 25.6094 12.5677 25.6094 14.4688C25.6094 15.7448 25.7005 16.6562 25.8828 17.2031C26.0911 17.724 26.4297 17.9844 26.8984 17.9844C26.8984 17.9844 27.3932 17.3464 28.3828 16.0703C29.3984 14.7943 30.6615 14.1562 32.1719 14.1562C33.8646 14.1562 35.1797 14.6641 36.1172 15.6797C37.0547 16.6693 37.5234 18.0885 37.5234 19.9375C37.5234 21.9948 36.8724 23.6875 35.5703 25.0156C34.2943 26.3177 32.6276 26.9688 30.5703 26.9688C27.9922 26.9688 25.8568 26.0443 24.1641 24.1953C22.4974 22.3203 21.6641 19.9375 21.6641 17.0469C21.6641 14.026 22.5495 11.1875 24.3203 8.53125C26.1172 5.875 28.8125 3.34896 32.4062 0.953125L33.7734 2.63281ZM12.9531 2.63281C10.2708 4.61198 8.23958 6.60417 6.85938 8.60938C5.47917 10.6146 4.78906 12.5677 4.78906 14.4688C4.78906 15.7969 4.88021 16.7214 5.0625 17.2422C5.24479 17.737 5.55729 17.9844 6 17.9844C6.02604 17.9844 6.54688 17.3464 7.5625 16.0703C8.60417 14.7943 9.86719 14.1562 11.3516 14.1562C13.0443 14.1562 14.3594 14.6641 15.2969 15.6797C16.2344 16.6693 16.7031 18.0885 16.7031 19.9375C16.7031 21.9948 16.0521 23.6875 14.75 25.0156C13.474 26.3177 11.8073 26.9688 9.75 26.9688C7.17188 26.9688 5.04948 26.0443 3.38281 24.1953C1.71615 22.3203 0.882812 19.9375 0.882812 17.0469C0.882812 14.026 1.76823 11.1875 3.53906 8.53125C5.3099 5.875 7.99219 3.34896 11.5859 0.953125L12.9531 2.63281Z" fill="#1E2B54"/>
+            </svg>
+            <div class="user-review-card-content">
+              <p class="user-review p-font">This hotel is the perfect escape from the busy top-notch and the staff was
+                incredibly friendly was comfortable and the on-site restaurant highly
+                recommend this hotel to anyone looking This hotel is the perfect escape from
+                the busy top-notch and the staff was incredibly friendly was comfortable and
+                the on-site restaurant highly recommend this hotel to anyone looking</p>
+              <p class="user-location">Shan malhotra, Kolkata</p>
+            </div>
+          </div>
+        </div>
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-svg">
+          <path d="M8 38.5C7.17157 38.5 6.5 39.1716 6.5 40C6.5 40.8284 7.17157 41.5 8 41.5V38.5ZM73.0607 41.0607C73.6464 40.4749 73.6464 39.5251 73.0607 38.9393L63.5147 29.3934C62.9289 28.8076 61.9792 28.8076 61.3934 29.3934C60.8076 29.9792 60.8076 30.9289 61.3934 31.5147L69.8787 40L61.3934 48.4853C60.8076 49.0711 60.8076 50.0208 61.3934 50.6066C61.9792 51.1924 62.9289 51.1924 63.5147 50.6066L73.0607 41.0607ZM8 41.5H72V38.5H8V41.5Z" fill="#E47F2D"/>
+        </svg>
+      </div>
+      <img class="pattern" src="Assets/pattern.png" alt="pattern">
+    </section>
+
+    <section class="section bg-image overlay" style="background-image: url('images/aboutHero.jpg');">
+        <div class="container" >
+          <div class="row align-items-center">
+            <div class="col-12 col-md-7 text-center mb-4 mb-md-0 text-md-left" data-aos="fade-up">
+              <h2 class="text-white font-weight-bold">A Best Place To Stay. Reserve Now!</h2>
+            </div>
+            <div class="col-12 col-md-5 text-center text-md-right" data-aos="fade-up" data-aos-delay="200">
+              <a href="pages/reservation.html" class="btn btn-outline-white-primary py-3 text-white px-5">Reserve Now</a>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <footer class="section footer-section">
+      <div class="footer-container">
+        <div class="row mb-4">
+          <div class="col-md-3 mb-5">
+            <ul class="list-unstyled link">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="pages/about.html">About Us</a></li>
+              <li><a href="pages/accomodation.html">Rooms</a></li>
+              <li><a href="pages/contact.html">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-5 pr-md-5 contact-info">
+            <!-- <li>198 West 21th Street, <br> Suite 721 New York NY 10016</li> -->
+            <p><span class="d-block"><span class="ion-ios-location h5 mr-3 text-primary"></span>Address:</span>
+              <span>Romeo Lane, The Boutique Resort, <br>Assagao, Badem, <br>Vagator, Goa, <br> Goa 403509</span>
+            </p>
+            <p><span class="d-block"><span class="ion-ios-telephone h5 mr-3 text-primary"></span>Phone:</span>
+              <span> (+91) 8222999127 <br>(+91) 8222999128</span>
+            </p>
+            <p><span class="d-block"><span class="ion-ios-email h5 mr-3 text-primary"></span>Email:</span>
+              <span>reservations.crs@romeolane.com</span>
+            </p>
+          </div>
+          <div class="col-md-3 mb-5">
+            <p>Sign up for our newsletter</p>
+            <form action="#" class="footer-newsletter">
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email...">
+                <button type="submit" class="btn"><span class="fa fa-paper-plane"></span></button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3 mb-5">
+            <div class="map-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.652924350241!2d-118.40762668477737!3d33.94313268063321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5cbb7dd6bf2b59f9!2sThe%20Huntington%20Library%2C%20Art%20Museum%2C%20and%20Botanical%20Gardens!5e0!3m2!1sen!2sus!4v1616195681748!5m2!1sen!2sus" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="pt-5 container">
+          <div class="row">
+            <p class="col-md-5 mx-auto text-center">
+              <a href="https://www.facebook.com/romeolanedelhi?mibextid=LQQJ4d" target="_blank">Follow us on Facebook <span class="fa fa-facebook icon-font"></span></a>
+              <br><a href="https://instagram.com/romeolanetheboutiqueresort?igshid=YmMyMTA2M2Y=" target="_blank">Follow us on Instagram <span class="fa fa-instagram icon-font mt-4"></span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <p>Ⓒ <script>document.write(new Date().getFullYear());</script>. ALL RIGHTS RESERVED.</p>
+    </div>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    
+    
+    <script src="js/aos.js"></script>
+    
+    <script src="js/bootstrap-datepicker.js"></script> 
+    <script src="js/jquery.timepicker.min.js"></script> 
+
+    
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
