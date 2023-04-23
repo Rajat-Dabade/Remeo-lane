@@ -179,7 +179,7 @@ textarea.form-control {
   width: 100%;
   position: relative; }
   .site-hero .heading {
-    font-weight: bold; }
+    font-weight: normal; }
   .site-hero .scroll-down {
     position: absolute;
     bottom: 20px;
@@ -213,7 +213,7 @@ textarea.form-control {
   font-size: 80px;
   color: #fff;
   line-height: 1;
-  font-weight: bold; }
+  font-weight: normal; }
 @media (max-width: 991.98px) {
   .site-hero-inner .heading {
     font-size: 40px; } }
@@ -343,7 +343,7 @@ textarea.form-control {
 
 .heading-serif, .heading, .testimonial-section .heading, .slider-section .heading, .blog-post-entry .heading {
   font-size: 60px;
-  font-weight: 700; }
+  font-weight: normal; }
 @media (max-width: 991.98px) {
   .heading-serif, .heading, .testimonial-section .heading, .slider-section .heading, .blog-post-entry .heading {
     font-size: 40px; } }
@@ -403,6 +403,10 @@ textarea.form-control {
 .post .media-custom a:hover {
   color: #ffba5a; }
 .post .media-custom .media-body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: max-content;
   padding: 10px 30px; }
 .post .media-custom h2 {
   font-size: 26px; }
@@ -480,7 +484,7 @@ textarea.form-control {
   font-size: 40px;
   color: #fff;
   line-height: 1.2;
-  font-weight: 800 !important;
+  font-weight: normal !important;
   text-transform: uppercase; }
 @media (max-width: 991.98px) {
   .owl-carousel.home-slider .slider-item .slider-text h1 {
@@ -723,7 +727,7 @@ textarea.form-control {
 .contact-section .contact-info p .d-block {
   font-size: 14px;
   letter-spacing: .2em;
-  font-weight: bold;
+  font-weight: normal;
   text-transform: uppercase; }
 
 .post-categories li {
@@ -1277,6 +1281,11 @@ textarea.form-control {
   height: 263px;
 }
 
+.review-card {
+  background-color: #EBF2F9;
+  padding: 24px;
+  margin: 0px 0px;
+}
 .handburger-menu {
   display: none !important;
 }

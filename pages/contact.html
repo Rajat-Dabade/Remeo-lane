@@ -24,6 +24,15 @@
     <!-- Theme Style -->
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+     (function(){
+       emailjs.init("SaQTxeGnJiZHDcO8O");
+     })();
+    </script>
+
   </head>
   <body>
 
@@ -71,29 +80,29 @@
               <div class="row">
                 <div class="col-md-6 form-group">
                   <label for="name">Name</label>
-                  <input type="text" class="form-control ">
+                  <input type="text" id="contact_username" class="form-control ">
                 </div>
                 <div class="col-md-6 form-group">
                   <label for="phone">Phone</label>
-                  <input type="text" id="phone" class="form-control ">
+                  <input type="text" id="contact_phone" class="form-control ">
                 </div>
               </div>
 
               <div class="row">
                 <div class="col-md-12 form-group">
                   <label for="email">Email</label>
-                  <input type="email" class="form-control ">
+                  <input type="email" id="contact_email" class="form-control ">
                 </div>
               </div>
               <div class="row mb-4">
                 <div class="col-md-12 form-group">
                   <label for="message">Write Message</label>
-                  <textarea name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
+                  <textarea name="message" id="contact_message" class="form-control " cols="30" rows="8"></textarea>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="submit" value="Send Message" class="btn btn-primary text-white font-weight-bold">
+                  <input type="button" id="contact_send_message_btn" onclick="sendContactMail()" value="Send Message" class="btn btn-primary text-white font-weight-bold">
                 </div>
               </div>
             </form>

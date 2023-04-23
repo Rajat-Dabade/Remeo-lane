@@ -218,3 +218,84 @@ const myDiv = document.getElementById("handBurgerMenu");
 myButton.addEventListener("click", function() {
   myDiv.classList.toggle("open-handburger-menu");
 });
+
+
+const sendGetInTouchMail = () => {
+  const username = document.getElementById("git_username").value;
+  const email = document.getElementById("git_email_id").value
+  const accomodationType = document.getElementById("git_accomodation_type").value
+  const number_of_person = document.getElementById("git_number_of_person").value
+  const message = document.getElementById("git_message").value
+  document.getElementById("git_send_message_btn").value = "Sending Message..."
+  emailjs.send("service_mqbxn73","template_nwtpwrl", {
+    subject: "Get In Touch Request",
+    from_email: email,
+    from_name: username,
+    phone_number: "",
+    accomodation_type: accomodationType,
+    number_of_person: number_of_person,
+    message: message,
+  }).then((res) => {
+    if (res.status === 200) {
+      alert("Success")
+    } else {
+      alert("Regret")
+    }
+    document.getElementById("git_send_message_btn").value = "Send Message"
+  });
+}
+
+
+const reservationMail = () => {
+  const username = document.getElementById("res_username").value
+  const phone = document.getElementById("res_phone").value
+  const email = document.getElementById("res_email_id").value
+  const checkInDate = document.getElementById("res_checkin_date").value
+  const checkOutDate = document.getElementById("res_checkout_date").value
+  const numberOfAdults = document.getElementById("res_number_of_adults").value
+  const numberOfChildrens = document.getElementById("res_number_of_childrens").value
+  const message = document.getElementById("res_message").value
+  document.getElementById("res_reserve_now_btn").value = "Sending Request..."
+  emailjs.send("service_mqbxn73","template_iojnfoz", {
+    from_name: username,
+    phone_number: phone,
+    from_email: email,
+    checkin_date: checkInDate,
+    checkout_date: checkOutDate,
+    number_of_adults: numberOfAdults,
+    number_of_children: numberOfChildrens,
+    message: message,
+  }).then(res => {
+    document.getElementById("res_reserve_now_btn").value = "Reserve Now"
+    if (res.status === 200) {
+      alert("Reservation request send successfully. The team will contact you soon!")
+    } else {
+      alert("There was some problem in sending the request. Sorry for the inconvenience caused.")
+    }
+  });
+}
+
+const sendContactMail = () => {
+  const username = document.getElementById("contact_username").value
+  const phone = document.getElementById("contact_phone").value
+  const email = document.getElementById("contact_email").value
+  const message = document.getElementById("contact_message").value
+  document.getElementById("contact_send_message_btn").value = "Sending Message..."
+  console.log(username, phone, email, message)
+  emailjs.send("service_mqbxn73","template_nwtpwrl",{
+    subject: "Contact request",
+    from_email: email,
+    from_name: username,
+    phone_number: phone,
+    accomodation_type: "",
+    number_of_person: "",
+    message: message,
+  }).then((res) => {
+    document.getElementById("contact_send_message_btn").value = "Send Message"
+    if (res.status === 200) {
+      alert("Thank you for sending the message, the team will contact you soon!")
+    } else {
+      alert("There was some problem in sending the request. Sorry for the inconvenience caused")
+    }
+  });
+}

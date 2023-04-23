@@ -23,10 +23,10 @@ nav {
     top: 0;
     width: 100%;
     z-index: 3;
-   
+
     box-sizing: border-box;
   }
-  
+
   nav ul {
     list-style: none;
     display: flex;
@@ -47,7 +47,7 @@ nav {
     text-decoration: none;
     color: #ffffff;
     text-transform: uppercase;
-    padding: 16px 16px; 
+    padding: 16px 16px;
   }
 
   .button-border {
@@ -85,14 +85,14 @@ nav {
     position: relative;
     z-index: 1;
   }
-  
+
   .hero-text {
     position: absolute;
     text-align: Left;
     width: 30rem;
     padding: 80px 152px;
   }
-  
+
   .hero-text h1 {
     color: white;
     font-size: 7rem;
@@ -100,7 +100,7 @@ nav {
     font-family: 'Bodoni', serif;
     font-weight: normal;
   }
-  
+
   .hero-text p {
     color: white;
     font-size: 1.5rem;
@@ -109,7 +109,7 @@ nav {
 
   /*-----------Search Secion----------*/
 
- 
+
 
   .search-section {
     display: flex;
@@ -169,7 +169,7 @@ nav {
   #guests {
     width: 72px;
   }
-  
+
 
   /* -----About Us section----- */
 
@@ -180,18 +180,18 @@ nav {
     align-items: center;
     margin-bottom: -5rem;
   }
-  
+
   .content {
     flex-basis: 40%;
-  
+
     margin-left: 152px;
   }
-  
+
   .image {
     flex-basis: 60%;
     margin-right: 40px;
   }
-  
+
   img {
     max-width: 100%;
     height: auto;
@@ -227,7 +227,7 @@ nav {
     padding: 50px 152px;
   }
 
- 
+
 
   .room-grid {
     display: grid;
@@ -315,12 +315,12 @@ nav {
     margin: 0 24px;
     margin: 100px 0;
   }
-  
+
  .review .heading {
     text-align: center;
     margin-bottom: 56px;
- } 
-  
+ }
+
  .user-reviews {
     display: flex;
     flex-direction: row;
@@ -334,14 +334,14 @@ nav {
     width: 90%;
     margin: 0 56px;
   }
-  
+
   .user-review-card {
     width: calc(33.33% - 16px);
     margin-bottom: 16px;
     background-color: #ffffff;
     display: flex;
   }
-  
+
   .user-review-card svg {
     margin-top: 24px;
     margin-left: 24px;
@@ -356,13 +356,13 @@ nav {
     justify-content: space-between;
     flex-direction: column;
   }
-  
+
   .user-review {
     font-size: 1rem;
     color: #1E2B54;
     margin-bottom: 16px;
   }
-  
+
   .user-location {
     font-size: .75rem;
     letter-spacing: 1.5px;
@@ -383,7 +383,7 @@ nav {
     background-size: cover;
     background-position: center;
     position: relative;
-    
+
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -423,7 +423,7 @@ nav {
     margin-top: 152px;
     margin-bottom: 200px;
     padding: 0px 152px;
-    
+
 }
 
 .contact-us .heading {
@@ -437,17 +437,17 @@ nav {
     justify-content: center;
   }
 
-  .form div { 
+  .form div {
     display: flex;
     flex-direction: column;
   }
-  
+
   .form label {
     display: block;
     margin-bottom: 5px;
     color: #EBF2F9;
   }
-  
+
   .form input,
   .form select,
   .form textarea {
@@ -489,19 +489,19 @@ nav {
     background-size: cover;
     background-position: center;
     position: relative;
-    
+
   }
-  
-  
+
+
   .book-content {
       width: 60%;
     }
-    
+
     .book-now h2 {
         color: #EBF2F9;
     font-size: 6rem;
 }
-        
+
 .book-now p {
     font-size: 1.5rem;
     color: #EBF2F9;
@@ -533,7 +533,7 @@ nav {
     flex-direction: row;
     padding: 80px 152px 20px;
     gap: 10px;
-    
+
 }
 
 .logo-info {
@@ -560,7 +560,7 @@ nav {
 }
 .row {
     display: flex;
-    
+
 }
 
 
@@ -588,15 +588,15 @@ nav {
     line-height: 1.5em;
     vertical-align: middle;
   }
-  
+
   .fa-stack-2x {
     font-size: 2em;
   }
-  
+
   .fa-stack-1x {
     font-size: 1em;
   }
-  
+
   .fa-inverse {
     color: #fff;
   }
