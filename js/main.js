@@ -228,7 +228,7 @@ const sendGetInTouchMail = () => {
   const number_of_person = document.getElementById("git_number_of_person").value
   const message = document.getElementById("git_message").value
   console.log("Phone", phone)
-  document.getElementById("git_send_message_btn").value = "Sending Message..."
+  document.getElementById("git_send_message_btn").innerHTML = "Sending Message..."
   emailjs.send("service_mqbxn73","template_nwtpwrl", {
     subject: "Get In Touch Request",
     from_email: email,
@@ -238,12 +238,12 @@ const sendGetInTouchMail = () => {
     number_of_person: number_of_person,
     message: message,
   }).then((res) => {
+    document.getElementById("git_send_message_btn").innerHTML = "Send Message"
     if (res.status === 200) {
       alert("Request send successfully, the team will reach out to you soon!")
     } else {
       alert("There is some problem in sending the request, the team is trying fixing it. Will get back soon!")
     }
-    document.getElementById("git_send_message_btn").value = "Send Message"
   });
 }
 
@@ -257,7 +257,7 @@ const reservationMail = () => {
   const numberOfAdults = document.getElementById("res_number_of_adults").value
   const numberOfChildrens = document.getElementById("res_number_of_childrens").value
   const message = document.getElementById("res_message").value
-  document.getElementById("res_reserve_now_btn").value = "Sending Request..."
+  document.getElementById("res_reserve_now_btn").innerHTML = "Sending Request..."
   emailjs.send("service_mqbxn73","template_iojnfoz", {
     from_name: username,
     phone_number: phone,
@@ -268,7 +268,7 @@ const reservationMail = () => {
     number_of_children: numberOfChildrens,
     message: message,
   }).then(res => {
-    document.getElementById("res_reserve_now_btn").value = "Reserve Now"
+    document.getElementById("res_reserve_now_btn").innerHTML = "Reserve Now"
     if (res.status === 200) {
       alert("Reservation request send successfully. The team will contact you soon!")
     } else {
@@ -282,7 +282,7 @@ const sendContactMail = () => {
   const phone = document.getElementById("contact_phone").value
   const email = document.getElementById("contact_email").value
   const message = document.getElementById("contact_message").value
-  document.getElementById("contact_send_message_btn").value = "Sending Message..."
+  document.getElementById("contact_send_message_btn").innerHTML = "Sending Message..."
   console.log(username, phone, email, message)
   emailjs.send("service_mqbxn73","template_nwtpwrl",{
     subject: "Contact request",
@@ -293,7 +293,7 @@ const sendContactMail = () => {
     number_of_person: "",
     message: message,
   }).then((res) => {
-    document.getElementById("contact_send_message_btn").value = "Send Message"
+    document.getElementById("contact_send_message_btn").innerHTML = "Send Message"
     if (res.status === 200) {
       alert("Thank you for sending the message, the team will contact you soon!")
     } else {
