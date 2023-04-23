@@ -227,21 +227,21 @@ const sendGetInTouchMail = () => {
   const accomodationType = document.getElementById("git_accomodation_type").value
   const number_of_person = document.getElementById("git_number_of_person").value
   const message = document.getElementById("git_message").value
+  console.log("Phone", phone)
   document.getElementById("git_send_message_btn").value = "Sending Message..."
   emailjs.send("service_mqbxn73","template_nwtpwrl", {
     subject: "Get In Touch Request",
-    phone_number: phone,
     from_email: email,
     from_name: username,
-    phone_number: "",
+    phone_number: phone,
     accomodation_type: accomodationType,
     number_of_person: number_of_person,
     message: message,
   }).then((res) => {
     if (res.status === 200) {
-      alert("Success")
+      alert("Request send successfully, the team will reach out to you soon!")
     } else {
-      alert("Regret")
+      alert("There is some problem in sending the request, the team is trying fixing it. Will get back soon!")
     }
     document.getElementById("git_send_message_btn").value = "Send Message"
   });
@@ -272,7 +272,7 @@ const reservationMail = () => {
     if (res.status === 200) {
       alert("Reservation request send successfully. The team will contact you soon!")
     } else {
-      alert("There was some problem in sending the request. Sorry for the inconvenience caused.")
+      alert("There is some problem in sending the request, the team is trying fixing it. Will get back soon!")
     }
   });
 }
@@ -297,7 +297,7 @@ const sendContactMail = () => {
     if (res.status === 200) {
       alert("Thank you for sending the message, the team will contact you soon!")
     } else {
-      alert("There was some problem in sending the request. Sorry for the inconvenience caused")
+      alert("There is some problem in sending the request, the team is trying fixing it. Will get back soon!")
     }
   });
 }
