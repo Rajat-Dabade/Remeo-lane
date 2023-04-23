@@ -221,7 +221,8 @@ myButton.addEventListener("click", function() {
 
 
 const sendGetInTouchMail = () => {
-  const username = document.getElementById("git_username").value;
+  const username = document.getElementById("git_username").value
+  const phone = document.getElementById("git_phone").value
   const email = document.getElementById("git_email_id").value
   const accomodationType = document.getElementById("git_accomodation_type").value
   const number_of_person = document.getElementById("git_number_of_person").value
@@ -229,6 +230,7 @@ const sendGetInTouchMail = () => {
   document.getElementById("git_send_message_btn").value = "Sending Message..."
   emailjs.send("service_mqbxn73","template_nwtpwrl", {
     subject: "Get In Touch Request",
+    phone_number: phone,
     from_email: email,
     from_name: username,
     phone_number: "",
