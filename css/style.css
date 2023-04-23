@@ -1330,6 +1330,10 @@ textarea.form-control {
   height: 400px;
 }
 
+.send_message_button {
+  background-color: #ff8900 !important;
+}
+
 @media (max-width: 1369px) {
   .welcome-img {
     max-width: 80%;
